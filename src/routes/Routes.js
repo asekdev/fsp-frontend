@@ -1,13 +1,13 @@
 import React, { Component} from 'react';
 import { Route, Switch } from 'react-router-dom';
-import Home from '../components/Home';
+import Dashboard from '../components/Dashboard';
 
 class Routes extends Component {
 
     render() {
         return (
             <Switch>
-                <Route path="/home" component={Home} />
+                <Route exact path="/" component={Dashboard} />
             </Switch>
     )
     }
