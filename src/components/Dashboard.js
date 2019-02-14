@@ -21,14 +21,14 @@ class Dashboard extends Component {
         return (
             <Container>
                 <EmptyMessage visible={this.state.visible} removeMessage={this.hideMessage}/>
-                <Header as="h1" content="Dashboard" icon="dashboard"/>
+                <Header as="h1" color="grey" content="Dashboard" icon="grey dashboard" />
                 <Grid columns={1}>
-                <Grid.Column textAlign="left">
-                   <Button color="blue">
-                   <Icon name="plus"/>
-                    Create Project
-                   </Button>
-                </Grid.Column>
+                    <Grid.Column textAlign="left">
+                        <Button color="blue" size="tiny">
+                        <Icon name="plus"/>
+                            Create Project
+                        </Button>
+                    </Grid.Column>
                 </Grid>
             </Container>
         )   

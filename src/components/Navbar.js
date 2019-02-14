@@ -11,13 +11,13 @@ class Navbar extends Component {
     render() { 
         const { activeItem } = this.state
         return (
-            <Menu size='large' color="violet" inverted secondary>
+            <Menu size='huge' color="violet" inverted secondary>
                 <Menu.Item color="olive">
                 <Icon name="dolly" />
                  <strong>Trench</strong>
                 </Menu.Item>
                 <Menu.Menu position='right'>
-                <Menu.Item name="home" active={activeItem === 'dashboard'} onClick={this.handleItemClick} as={ Link } to="/">
+                <Menu.Item name="dashboard" active={activeItem === 'dashboard'} onClick={this.handleItemClick} as={ Link } to="/">
                     <Icon name="dashboard" />
                     Dashboard
                 </Menu.Item>
