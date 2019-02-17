@@ -5,7 +5,7 @@ import { EmptyMessage, ProjectCard } from './common';
 const data = {
     title: "Social App",
     subject: "Tech",
-    description: "Project dedicated to tech around the world "
+    description: "Project dedicated to tech aroasdfasdfasdf asdfasdf asdf asdfas dfasund the world "
 }
 
 const data2 = {
@@ -45,14 +45,26 @@ class Dashboard extends Component {
                 </Grid>
                 <Header as="h3" color="grey" content="Your Projects" icon="grey folder" />
                 <Grid columns={4}>
-                <Grid.Row stretched>
+              
                     <Grid.Column textAlign="left">
                        <ProjectCard project_data={data}/>
                     </Grid.Column>
                     <Grid.Column textAlign="left">
                        <ProjectCard project_data={data2}/>
                     </Grid.Column>
-                </Grid.Row>
+                    <Grid.Column textAlign="left">
+                       <ProjectCard project_data={data}/>
+                    </Grid.Column>
+                    <Grid.Column textAlign="left">
+                       <ProjectCard project_data={data2}/>
+                    </Grid.Column>
+                    <Grid.Column textAlign="left">
+                       <ProjectCard project_data={data}/>
+                    </Grid.Column>
+                    <Grid.Column textAlign="left">
+                       <ProjectCard project_data={data2}/>
+                    </Grid.Column>
+                
                   
                 </Grid>
             </Container>

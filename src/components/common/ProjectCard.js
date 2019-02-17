@@ -6,7 +6,7 @@ const ProjectCard = (props) => {
   const { project_data } = props;
 
   return (
-    <Card>
+    <Card style={{height: '100%'}}>
     <Card.Content>
       <Label style={{float: 'right'}}>
         <Icon name='calendar' /> 23rd Jan
