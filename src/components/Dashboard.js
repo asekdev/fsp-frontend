@@ -1,7 +1,18 @@
 import React, { Component } from 'react';
 import { Container, Header, Grid, Button, Icon } from 'semantic-ui-react';
-import { EmptyMessage } from './common';
+import { EmptyMessage, ProjectCard } from './common';
 
+const data = {
+    title: "Social App",
+    subject: "Tech",
+    description: "Project dedicated to tech around the world "
+}
+
+const data2 = {
+    title: "Social App",
+    subject: "Tech",
+    description: "Project dedicated"
+}
 
 class Dashboard extends Component {
 
@@ -21,14 +32,28 @@ class Dashboard extends Component {
         return (
             <Container>
                 <EmptyMessage visible={this.state.visible} removeMessage={this.hideMessage}/>
-                <Header as="h1" color="grey" content="Dashboard" icon="grey dashboard" />
-                <Grid columns={1}>
-                    <Grid.Column textAlign="left">
-                        <Button color="blue" size="tiny">
+                <Grid columns={2} style={{marginTop: 30}}>
+                <Grid.Column textAlign="left">
+                <Header as="h1" color="grey" content="Dashboard" icon="dashboard" />
+                    </Grid.Column>
+                    <Grid.Column textAlign="right">
+                        <Button color="blue" size="small">
                         <Icon name="plus"/>
                             Create Project
                         </Button>
                     </Grid.Column>
+                </Grid>
+                <Header as="h3" color="grey" content="Your Projects" icon="grey folder" />
+                <Grid columns={4}>
+                <Grid.Row stretched>
+                    <Grid.Column textAlign="left">
+                       <ProjectCard project_data={data}/>
+                    </Grid.Column>
+                    <Grid.Column textAlign="left">
+                       <ProjectCard project_data={data2}/>
+                    </Grid.Column>
+                </Grid.Row>
+                  
                 </Grid>
             </Container>
         )   
