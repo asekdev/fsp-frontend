@@ -10,3 +10,14 @@
   color: #ffffff;
   text-align: center;
 }
+
+.not-found-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.not-found-image {
+  border-radius: 10px;
+}

@@ -5,16 +5,11 @@ const CreateProjectModal = props => {
   const { size, open, onDismiss } = props;
 
   return (
-    <Modal
-      size={size}
-      dimmer
-      open={open}
-      onClose={onDismiss}
-      centered={true}
-    >
+    <Modal size={size} dimmer open={open} onClose={onDismiss} centered={true}>
       <Modal.Header>
         <Icon name="columns" />
-        Create Project</Modal.Header>
+        Create Project
+      </Modal.Header>
       <Modal.Content>
         <Form>
           <Form.Group widths="equal">
@@ -31,10 +26,13 @@ const CreateProjectModal = props => {
         </Form>
       </Modal.Content>
       <Modal.Actions>
-        <Button negative onClick={onDismiss}>
-          No
-        </Button>
-        <Button positive icon="checkmark" labelPosition="right" content="Yes" />
+        <Button onClick={onDismiss}>Cancel</Button>
+        <Button
+          positive
+          icon="checkmark"
+          labelPosition="left"
+          content="Add Project"
+        />
       </Modal.Actions>
     </Modal>
   );
