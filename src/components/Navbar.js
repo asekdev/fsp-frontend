@@ -12,7 +12,7 @@ class Navbar extends Component {
   render() {
     const { activeItem } = this.state;
     return (
-      <Menu size="huge" color="violet" inverted secondary>
+      <Menu size="massive" color="violet" inverted secondary>
         <Menu.Item
           as={Link}
           to="/"
