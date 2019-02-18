@@ -40,9 +40,9 @@ class Navbar extends Component {
             onClick={this.handleItemClick}
             as={Link}
             to="/settings"
+            icon="setting" 
+            content="Settings"
           >
-            <Icon name="setting" />
-            Settings
           </Menu.Item>
 
           <Menu.Item>
