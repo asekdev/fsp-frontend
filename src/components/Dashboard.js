@@ -3,8 +3,7 @@ import { Container, Header, Grid, Button, Icon } from "semantic-ui-react";
 import {
   EmptyMessage,
   ProjectCard,
-  CreateProjectModal,
-  Footer
+  CreateProjectModal
 } from "./common";
 
 const data = {
@@ -42,7 +41,7 @@ class Dashboard extends Component {
     const { modalOpen } = this.state;
 
     return (
-      <Container fluid>
+      <div style={{height: '100%'}}>
         <Container>
           {/* <EmptyMessage
           visible={this.state.visible}
@@ -84,17 +83,19 @@ class Dashboard extends Component {
               <Grid.Column mobile={16} tablet={8} computer={4}>
                 <ProjectCard project_data={data} />
               </Grid.Column>
+              
             </Grid>
-          </div>
-
-          <CreateProjectModal
+          </div>     
+        </Container>
+       
+        <Container fluid>
+        <CreateProjectModal
             size="small"
             open={modalOpen}
             onDismiss={this.toggleModal}
           />
-        </Container>
-        <Footer />
       </Container>
+      </div>
     );
   }
 }
