@@ -21,7 +21,7 @@ const ProjectCard = props => {
             animated="fade"
             color="instagram"
             as={Link}
-            to={`/${project_data.title}`}
+            to={`/project/${project_data.id}`}
           >
             <Button.Content visible>Go to project</Button.Content>
             <Button.Content hidden>

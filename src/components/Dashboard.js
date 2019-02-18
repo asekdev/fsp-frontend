@@ -7,6 +7,7 @@ import {
 } from "./common";
 
 const data = {
+    id: 1,
   title: "Social App",
   subject: "Tech",
   description:
@@ -26,7 +27,7 @@ class Dashboard extends Component {
       visible: true,
       modalOpen: false
     };
-  }
+}
 
   hideMessage = () => {
     console.log("hitting here");
@@ -41,7 +42,7 @@ class Dashboard extends Component {
     const { modalOpen } = this.state;
 
     return (
-      <div style={{height: '100%'}}>
+      <div>
         <Container>
           {/* <EmptyMessage
           visible={this.state.visible}
@@ -70,20 +71,7 @@ class Dashboard extends Component {
             <Grid>
               <Grid.Column mobile={16} tablet={8} computer={4}>
                 <ProjectCard project_data={data} />
-              </Grid.Column>
-              <Grid.Column mobile={16} tablet={8} computer={4}>
-                <ProjectCard project_data={data} />
-              </Grid.Column>
-              <Grid.Column mobile={16} tablet={8} computer={4}>
-                <ProjectCard project_data={data} />
-              </Grid.Column>
-              <Grid.Column mobile={16} tablet={8} computer={4}>
-                <ProjectCard project_data={data} />
-              </Grid.Column>
-              <Grid.Column mobile={16} tablet={8} computer={4}>
-                <ProjectCard project_data={data} />
-              </Grid.Column>
-              
+              </Grid.Column>              
             </Grid>
           </div>     
         </Container>
