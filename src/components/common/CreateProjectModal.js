@@ -7,10 +7,10 @@ const CreateProjectModal = props => {
   return (
     <Modal
       size={size}
-      dimmer="blurring"
+      dimmer
       open={open}
       onClose={onDismiss}
-      centered={false}
+      centered={true}
     >
       <Modal.Header>
         <Icon name="columns" />
